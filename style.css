@@ -42,15 +42,18 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
   flex: 1;
   margin: 10px;
+  align-items: right;
 }
 
 .item-double {
   flex: 2;
+  align-items: right;
 }
 
 /* -------  Navigation ------- */
@@ -59,7 +62,6 @@ header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
-  
 }
 
 .logo {
@@ -74,7 +76,7 @@ header {
 
 .nav-links {
   display: flex;
-  padding-left: 75px;
+  padding-left: 68px;
 }
 
 header nav ul li {
@@ -112,8 +114,6 @@ form {
 
 form label {
   font-weight: bold;
-  display: inline-flex;
-  justify-content: left;
 }
 
 form select,
@@ -121,8 +121,6 @@ form input {
   margin-bottom: 20px;
   width: 180px;
   position: relative;
-  display:inline-block;
-  justify-content: right;
 }
 
 form button {
@@ -148,8 +146,8 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 480px){
-  body{
+@media all and (min-width: 480px) {
+  body {
     background-color: #dddddd;
     font-family: "Lato", sans-serif;
   }
@@ -168,7 +166,7 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
-  
+
   .nav-links {
     display: flex;
     justify-content: space-between;

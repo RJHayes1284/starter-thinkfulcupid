@@ -32,46 +32,45 @@
 
     <main>
       <!-- Join -->
-      <section id="join">
+      <section id="join" class="group">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
         <h2>Find your perfect match</h2>
-        <form> 
+        <form>
           <fieldset>
             <div>
               <label for="email">Email</label>
               <input
-              type="text"
-              id="email"
-              placeholder="email@example.com"
-              required>
+                type="email"
+                id="email"
+                placeholder="email@example.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required
+              />
             </div>
-          <div>
-            <label for="username">Username</label>
-            <input
-            type="text"
-            id="name"
-            required
-            >
-          </div>
-          <div>
-            <label for="password">Password</label>
-            <input 
-            id="password" 
-            type="password" 
-            name="password" 
-            minlength="8" 
-            required
-            />
-          </div>
-          <div>
-            <label for="gender">I am a...</label>
-            <select name="gender" id="gender" size="1">
-            <option value="female">female</option>
-            <option value="male">male</option>
-            </select>
-          </div>
-        </fieldset>
-        <button type="join">Join</button>
+
+            <div>
+              <label for="password">Create a password</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                minlength="8"
+                required
+              />
+            </div>
+            <div>
+              <label for="username">Username</label>
+              <input type="text" id="name" required />
+            </div>
+            <div>
+              <label for="gender">I am a...</label>
+              <select name="gender" id="gender" size="1">
+                <option value="female">female</option>
+                <option value="male">male</option>
+              </select>
+            </div>
+          </fieldset>
+          <button type="join">Join</button>
         </form>
       </section>
 
