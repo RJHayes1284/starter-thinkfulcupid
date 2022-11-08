@@ -32,7 +32,9 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 340px;
+  flex: 2;
+  margin: 10px;
 }
 
 /* ---  Groups & Items --- */
@@ -57,6 +59,7 @@ header {
   background-color: #83092e;
   padding: 20px 20px 0 20px;
   text-align: center;
+  
 }
 
 .logo {
@@ -65,35 +68,61 @@ header {
   color: #ecdbc9;
 }
 
+.navbar {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  padding-left: 75px;
+}
+
 header nav ul li {
   list-style-type: none;
+  display: flex;
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
+  display: flex;
 }
 
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
+  display: flex;
+}
+
+.group img {
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 form label {
   font-weight: bold;
+  display: inline-flex;
+  justify-content: left;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
+  position: relative;
+  display:inline-block;
+  justify-content: right;
 }
 
 form button {
@@ -118,3 +147,31 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px){
+  body{
+    background-color: #dddddd;
+    font-family: "Lato", sans-serif;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+  }
+
+  section {
+    padding: 0 10%;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
