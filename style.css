@@ -10,6 +10,7 @@ h2 {
   font-weight: 400;
   margin: 0 10px 15px 10px;
   text-align: center;
+  padding: 20px;
 }
 
 h3 {
@@ -32,9 +33,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 340px;
-  flex: 2;
-  margin: 10px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -42,18 +41,20 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
-  align-items: right;
+  margin: 15px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .item-double {
   flex: 2;
-  align-items: right;
+  margin: 10px;
+  justify-content: center;
 }
 
 /* -------  Navigation ------- */
@@ -72,29 +73,28 @@ header {
 
 .navbar {
   display: flex;
+  justify-content: center;
 }
 
 .nav-links {
   display: flex;
-  padding-left: 68px;
+  padding-left: 0;
+  list-style: none;
 }
 
 header nav ul li {
   list-style-type: none;
-  display: flex;
 }
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
-  display: flex;
 }
 
 header nav ul li a:hover {
-  color: #bdbdbd;
+  color: #a70e16;
   text-decoration: none;
-  display: flex;
 }
 
 .group img {
@@ -108,8 +108,6 @@ header nav ul li a:hover {
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 form label {
@@ -120,7 +118,11 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  position: relative;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form button {
@@ -147,29 +149,24 @@ footer p {
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
-  body {
-    background-color: #dddddd;
-    font-family: "Lato", sans-serif;
-  }
-
   .group {
-    display: flex;
     flex-direction: row;
-    margin-bottom: 100px;
-  }
-
-  section {
-    padding: 0 10%;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+
+  header {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+
+  header nav {
+    margin-top: 14px;
   }
 }
