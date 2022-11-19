@@ -38,6 +38,7 @@ main img {
 
 /* ---  Groups & Items --- */
 
+/* for mobile view we need this to stack (ie. "column") */
 .group {
   display: flex;
   flex-direction: column;
@@ -50,7 +51,7 @@ main img {
   flex-direction: column;
   justify-content: center;
 }
-
+/* the margin here will make sure there's space between the items in the double class */
 .item-double {
   flex: 2;
   margin: 10px;
@@ -70,7 +71,7 @@ header {
   font-size: 72px;
   color: #ecdbc9;
 }
-
+/* this will center the links below the logo */
 .navbar {
   display: flex;
   justify-content: center;
@@ -97,6 +98,7 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+/*this will ensure images on a mobile view will stack instead of squeeze in side by side */
 .group img {
   flex-direction: column;
   width: 100%;
@@ -119,7 +121,7 @@ form input {
   margin-bottom: 20px;
   width: 180px;
 }
-
+/* this will ensure the form shows up next to the first photo */
 form div {
   display: flex;
   justify-content: space-between;
@@ -147,13 +149,15 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+/* for desktop computers */
 
 @media all and (min-width: 480px) {
+/*this will ensure everything in a group class is side by side rather than stacked */
   .group {
     flex-direction: row;
     align-items: center;
   }
-
+/* for desktops we want the navigation to be next to the logo, this code does that */
   header {
     display: flex;
     padding: 0 30px;
