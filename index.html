@@ -36,13 +36,12 @@
       <section id="join">
         <div class="group">
           <div class="item-double">
-            <img src="images/love.png" alt="ThinkfulCupid - love" />
+            <img id="form-img" src="images/love.png" alt="ThinkfulCupid - love" />
           </div>
-          <div class="item">
+          <div class="item item-form">
             <h2>Find your perfect match</h2>
-            <form>
-              <fieldset>
-                <div>
+            <form id="join-form">
+                              <div class="form-field">
                   <label for="email">Email</label>
                   <input
                     type="email"
@@ -54,7 +53,7 @@
                   <!-- pattern ensures the proper format is used for the email address -->
                 </div>
 
-                <div>
+                <div class="form-field">
                   <label for="password">Create a password</label>
                   <input
                     id="password"
@@ -64,18 +63,17 @@
                     required
                   />
                 </div>
-                <div>
+                <div class="form-field">
                   <label for="username">Username</label>
                   <input type="text" id="name" required />
                 </div>
-                <div>
+                <div class="form-field">
                   <label for="gender">I am a...</label>
                   <select name="gender" id="gender" size="1">
                     <option value="female">female</option>
                     <option value="male">male</option>
                   </select>
                 </div>
-              </fieldset>
               <button type="join">Join</button>
             </form>
           </div>
