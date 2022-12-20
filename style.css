@@ -107,24 +107,30 @@ header nav ul li a:hover {
 }
 
 /* -------  Join Form ------- */
+#form-img {
+  width: 100%;
+}
+
 form {
   border: 2px solid #6b1a22;
-  padding: 10px;
+  padding: 5px;
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 form label {
   font-weight: bold;
+  font-size: 15px;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
-}
-/* this will ensure the form shows up next to the first photo */
-form div {
-  display: flex;
-  justify-content: space-between;
+  width: 100px;
 }
 
 form button {
@@ -135,7 +141,6 @@ form button {
   padding: 15px;
   width: 100%;
 }
-
 /* -------  Footer ------- */
 
 footer {
