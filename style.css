@@ -72,9 +72,10 @@ header {
   color: #ecdbc9;
 }
 /* this will center the links below the logo */
-.navbar {
+header nav {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .nav-links {
@@ -182,7 +183,6 @@ footer p {
   }
 
   header nav {
-    margin-top: 14px;
-    justify-content: center;
+    margin-top: 8px;
   }
 }
