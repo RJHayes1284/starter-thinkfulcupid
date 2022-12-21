@@ -183,6 +183,6 @@ footer p {
 
   header nav {
     margin-top: 14px;
-    justify-content: space-between
+    justify-content: center;
   }
 }
