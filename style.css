@@ -176,7 +176,7 @@ footer p {
   }
 
   header h1 {
-    font-size: 72px;
+    font-size: auto;
     margin: 14px 0;
     padding-top: 6px;
     justify-content: space-between;
